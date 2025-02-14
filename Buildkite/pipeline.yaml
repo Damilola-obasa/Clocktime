@@ -1,3 +1,7 @@
 steps:
-  - label: "Custom Script"
-    command: ./scripts/deploy.sh $(buildkite:git:commit)
+  - label: "Pre Checkout Setup"
+    pre-checkout: echo  "Commit Hash: $(buildkite:git:commit)"
+
+  - label: "Checkout Code"
+    command: echo "Repository is now checked out."
+
