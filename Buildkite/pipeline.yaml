@@ -6,6 +6,5 @@ steps:
       - echo "Starting build at $(date +'%Y-%m-%d %H:%M:%S')"
       - make build
       - make test
-    env:
-      ANSI_TIMESTAMP_FORMAT: "yyyy-MM-dd HH:mm:ss"
+
 
