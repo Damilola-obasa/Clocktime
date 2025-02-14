@@ -1,7 +1,6 @@
 steps:
-  - label: "Pre Checkout Setup"
-    pre-checkout: echo  "Commit Hash: $(buildkite:git:commit)"
-
-  - label: "Checkout Code"
-    command: echo "Repository is now checked out."
+  - label: "Display Dynamic Commit Link"
+    command: |
+      echo "Commit Hash: $BUILDKITE_COMMIT"
+      echo "You can view the commit here: https://github.com/myorg/myrepo/commit/$BUILDKITE_COMMIT"
 
