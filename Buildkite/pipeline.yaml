@@ -1,5 +1,5 @@
 steps:
-  - label: "Display Dynamic Commit Link"
+  - label: "Display Dynamic Commit Links"
     command: |
       echo "Commit Hash: $BUILDKITE_COMMIT"
       echo "You can view the commit here: https://github.com/Damilola-obasa/Clocktime/commit/$BUILDKITE_COMMIT"
